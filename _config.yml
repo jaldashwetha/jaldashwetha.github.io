@@ -1,0 +1,66 @@
+# DataAnalysis
+
+title: "Shwetha Jalda"
+description: "Data Analyst | Portfolio"
+baseurl: ""  # Leave this blank if deploying to your GitHub Pages root
+url: "https://shwethajalda.github.io"
+
+# Author details
+author:
+  name: "Shwetha Jalda"
+  email: "jalda.shwetha@gmail.com"
+  avatar: "/assets/profile-pic.jpg"
+  bio: "Data Analyst skilled in Python, SQL, and Machine Learning"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/jaldashwetha"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/yourprofile"
+    - label: "Twitter"
+      icon: "fab fa-twitter"
+      url: "https://twitter.com/yourhandle"
+
+# Theme Settings
+theme: "minimal-mistakes-jekyll"
+
+# Social Sharing
+social:
+  twitter: "yourhandle"
+  github: "yourusername"
+  linkedin: "yourprofile"
+
+# Plugins (Enable these for additional functionalities)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-archives
+
+# Navigation (Update these with your sections)
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Projects"
+    url: "/projects/"
+  - title: "Blog"
+    url: "/blog/"
+  - title: "About"
+    url: "/about/"
+
+# Defaults (Used for posts and pages)
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author_profile: true
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      author_profile: true
