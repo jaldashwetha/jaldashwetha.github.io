@@ -23,6 +23,8 @@ author:
       url: "https://twitter.com/yourhandle"
 
 # Theme Settings
+remote_theme: nrandecker/particle
+plugins: [jekyll-remote-theme]
 theme: "minimal-mistakes-jekyll"
 
 # Social Sharing
