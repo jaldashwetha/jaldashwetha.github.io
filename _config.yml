@@ -29,7 +29,7 @@ plugins: [jekyll-remote-theme]
 # Social Sharing
 social:
   twitter: "yourhandle"
-  github: "yourusername"
+  github: "https://github.com/jaldashwetha"
   linkedin: "yourprofile"
 
 # Plugins (Enable these for additional functionalities)
