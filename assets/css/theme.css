@@ -1,0 +1,71 @@
+/* ------------------------------------------------------------------
+   COLOUR PALETTE — tweak once, update everywhere
+-------------------------------------------------------------------*/
+:root {
+  --sj-primary:  #198754;       /* Bootstrap “success” green */
+  --sj-dark:     #0d1b2a;
+  --sj-light:    #f8f9fa;
+}
+
+/* Typography */
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--sj-dark);
+}
+h1, h2, h3, .sj-section-title {
+  font-family: 'Lora', serif;
+}
+
+/* Navbar */
+#mainNav {
+  background: var(--sj-light);
+}
+#mainNav .nav-link {
+  color: var(--sj-dark);
+}
+#mainNav .nav-link.active {
+  font-weight: 600;
+}
+
+/* Hero */
+.sj-hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e2f8f0 0%, #f6fcff 100%);
+  text-align: center;
+}
+.sj-avatar {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* Project cards */
+.sj-project-card img {
+  aspect-ratio: 16 / 9;        /* ensures equal height thumbnails */
+  object-fit: cover;
+}
+.sj-project-card .card-title {
+  color: var(--sj-primary);
+}
+
+/* Social icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+.sj-social-link {
+  font-size: 2rem;
+  color: var(--sj-primary);
+  transition: transform .2s;
+}
+.sj-social-link:hover {
+  transform: translateY(-3px);
+}
+
+/* Small UI helpers */
+.sj-section-title::after {
+  content: '';
+  display: block;
+  width: 3rem;
+  height: .25rem;
+  background: var(--sj-primary);
+  margin: .5rem auto 1.25rem;
+}
+.sj-shadow-sm { box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,.05); }
