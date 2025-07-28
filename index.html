@@ -1,8 +1,215 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- — META — ----------------------------------------------------------->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shwetha Jalda | Data Analytics Portfolio</title>
+  <meta name="description"
+        content="Projects, skills and contact information for Shwetha Jalda — data analyst who turns raw data into business value.">
+  <meta name="author" content="Shwetha Jalda">
 
+  <!-- — SOCIAL / OPEN GRAPH — ------------------------------------------->
+  <meta property="og:title"       content="Shwetha Jalda | Data Analytics Portfolio">
+  <meta property="og:description" content="Selected work in BI, ML and data‑driven product strategy.">
+  <meta property="og:image"      content="https://YOUR‑DOMAIN/assets/img/og-banner.jpg">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://YOUR‑DOMAIN/">
+
+  <!-- — FAVICON — -------------------------------------------------------->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon.png">
+
+  <!-- — FONTS — ---------------------------------------------------------->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Lora:wght@700&display=swap" rel="stylesheet">
+
+  <!-- — BOOTSTRAP 5 — ---------------------------------------------------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- — AOS (Animate On Scroll) — --------------------------------------->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- — YOUR THEME OVERRIDES — ------------------------------------------>
+  <link rel="stylesheet" href="/assets/css/theme.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav">
+
+<!-- — NAVBAR — ---------------------------------------------------------->
+<nav id="mainNav" class="navbar navbar-expand-lg fixed-top sj-shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#hero">Shwetha Jalda</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="/assets/Jalda‑Resume.pdf" target="_blank">Résumé</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- — HERO — ------------------------------------------------------------>
+<header id="hero" class="sj-hero d-flex align-items-center">
+  <div class="container text-center" data-aos="fade-up">
+    <img src="/assets/img/avatar.jpg" alt="Portrait of Shwetha Jalda"
+         class="rounded-circle mb-4 sj-avatar">
+    <h1 class="display-5 fw-bold">Hi, I’m Shwetha.</h1>
+    <p class="lead">I transform messy data into clear, actionable insight.</p>
+    <a href="#about" class="btn btn-primary btn-lg mt-3">Learn&nbsp;More</a>
+  </div>
+</header>
+
+<!-- — ABOUT — ----------------------------------------------------------->
 <section class="intro">
   <h1>Hi 👋, I'm Jalda Shwetha</h1>
   <p>I turn messy data into clear stories.</p>
 </section>
+  
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6" data-aos="fade-right">
+        <h2 class="sj-section-title">About Me</h2>
+        <p>
+          I’m a <strong>data analyst &amp; BI developer</strong> with 7 years’
+          experience turning raw facts into strategic advantage. Comfortable
+          across the stack—from SQL modelling to Power BI storytelling to
+          Python ML pipelines—I help teams decide *why* something matters, not
+          just *what* happened.
+        </p>
+        <p>
+          Past projects include churn prediction at a telecom unicorn, supply‑
+          chain anomaly alerts for a Fortune 500 retailer, and an NLP engine
+          that classifies 50 k+ customer verbatims per day ⚡.
+        </p>
+        <p>
+          When I’m not wrangling data you’ll find me trekking the Western
+          Ghats or teaching SQL basics to newcomers.
+        </p>
+      </div>
+      <div class="col-md-5 offset-md-1" data-aos="fade-left">
+        <ul class="list-group sj-skill-list">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Python &nbsp;<span class="badge bg-primary rounded-pill">Advanced</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            SQL / dbt &nbsp;<span class="badge bg-primary rounded-pill">Advanced</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Power BI &nbsp;<span class="badge bg-primary rounded-pill">Expert</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Tableau &nbsp;<span class="badge bg-primary rounded-pill">Intermediate</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            ML (sklearn, XGBoost) &nbsp;<span class="badge bg-primary rounded-pill">Intermediate</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- — PROJECTS — -------------------------------------------------------->
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="sj-section-title text-center mb-5" data-aos="zoom-in">
+      Selected Projects
+    </h2>
+
+    <div class="row gy-4">
+      <!-- Project card -->
+      <div class="col-md-6 col-lg-4" data-aos="flip-left">
+        <figure class="sj-project-card card h-100 shadow-sm">
+          <img src="/assets/img/project-churn.jpg" class="card-img-top"
+               alt="Screenshot of churn dashboard">
+          <figcaption class="card-body d-flex flex-column">
+            <h3 class="card-title h5">Churn Risk Dashboard</h3>
+            <p class="card-text flex-grow-1">
+              Interactive Power BI story that surfaces at‑risk cohorts and
+              simulates retention scenarios.
+            </p>
+            <a href="https://github.com/jaldashwetha/churn-dashboard"
+               class="btn btn-outline-primary btn-sm mt-2">View Repo</a>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Repeat the col‑md‑6 block for each project -->
+      <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="100">
+        <figure class="sj-project-card card h-100 shadow-sm">
+          <img src="/assets/img/project-forecast.jpg" class="card-img-top"
+               alt="Screenshot of sales forecast API">
+          <figcaption class="card-body d-flex flex-column">
+            <h3 class="card-title h5">Realtime Sales Forecast API</h3>
+            <p class="card-text flex-grow-1">
+              FastAPI micro‑service that predicts next‑month revenue with
+              MAPE &lt; 7 %.
+            </p>
+            <a href="https://sales-forecast-demo.streamlit.app"
+               class="btn btn-outline-primary btn-sm mt-2">Live Demo</a>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="200">
+        <figure class="sj-project-card card h-100 shadow-sm">
+          <img src="/assets/img/project-nlp.jpg" class="card-img-top"
+               alt="Screenshot of sentiment miner">
+          <figcaption class="card-body d-flex flex-column">
+            <h3 class="card-title h5">Call‑Centre Sentiment Miner</h3>
+            <p class="card-text flex-grow-1">
+              BERT‑based model that flags negative calls in < 5 s, boosting
+              agent QA efficiency by 30 %.
+            </p>
+            <a href="https://github.com/jaldashwetha/sentiment-miner"
+               class="btn btn-outline-primary btn-sm mt-2">View Repo</a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- — CONTACT — --------------------------------------------------------->
+<section id="contact" class="py-5 bg-light">
+  <div class="container text-center" data-aos="fade-up">
+    <h2 class="sj-section-title mb-4">Get in Touch</h2>
+    <p class="mb-4">
+      Open to freelance BI projects, full‑time data roles and community talks.
+    </p>
+    <div class="d-flex justify-content-center gap-4">
+      <a href="https://github.com/jaldashwetha" class="sj-social-link"
+         aria-label="GitHub"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/jaldashwetha"
+         class="sj-social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="mailto:jalda.shwetha@gmail.com" class="sj-social-link"
+         aria-label="E‑mail"><i class="bi bi-envelope"></i></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- — FOOTER — --------------------------------------------------------->
+<footer class="py-3 text-center small">
+  © <span id="year"></span> Shwetha Jalda. All rights reserved.
+</footer>
+
+<!-- — SCRIPTS — --------------------------------------------------------->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ once: true });
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
